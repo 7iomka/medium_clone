@@ -4,13 +4,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Routes from 'routes';
+import TopBar from 'components/topBar';
 
 // import './index.css';
 const App = () => {
   return (
     <div>
-      <h3>Welcome to Hooks</h3>
       <Router>
+        <TopBar />
         <Routes />
       </Router>
     </div>
